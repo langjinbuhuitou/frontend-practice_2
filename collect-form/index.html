@@ -24,6 +24,53 @@
 
         <section id="form">
         <h2>开始填写</h2>
+        <form action="#" method="get">
+        <p>  
+            <label for="nickname">您的昵称：</label>
+            <input type="text" id="nickname" name="nickname" placeholder="请输入昵称" required>
+        </p>
+
+        <p>
+            <label for="dorm-area">你常去的食堂：</label>
+            <select id="dorm-area" name="dorm-area">
+                <option value="">请选择</option>
+                <option value="nan">楠苑食堂</option>
+                <option value="qiu">楸苑食堂</option>
+                <option value="zi">梓苑食堂</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="mail">邮箱</label>
+            <input type="email" id="mail" name="mail" required>
+        </p>
+
+        <p>您对食堂饭菜口味的整体满意度是？</p>
+        <p>
+            <label><input type="radio" name="taste" value="very_satisfied" required> 非常满意</label>
+            <label><input type="radio" name="taste" value="satisfied" required> 满意</label>
+            <label><input type="radio" name="taste" value="neutral" required> 一般</label>
+            <label><input type="radio" name="taste" value="dissatisfied" required> 不满意</label>
+        </p>
+
+        <p>您希望食堂增加哪些菜系？（可多选）</p>
+        <p>
+            <label><input type="checkbox" name="cuisine" value="sichuan"> 川菜</label>
+            <label><input type="checkbox" name="cuisine" value="cantonese"> 粤菜</label>
+            <label><input type="checkbox" name="cuisine" value="western"> 西式快餐</label>
+            <label><input type="checkbox" name="cuisine" value="xiangcai"> 湘菜</label>
+        </p>
+
+        <p>
+            <label for="suggestion">您有什么宝贵的改进建议？</label>
+            <p><textarea id="suggestion" name="suggestion" rows="4" placeholder="请在此处输入..."></textarea></p>
+        </p>
+
+        <p>
+            <button type="submit">提交问卷</button>
+        </p>
+
+        </form>
         
         </section>
     </main>
